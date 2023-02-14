@@ -1,0 +1,53 @@
+/* FOOTER */
+
+.footer {
+    width: 100%;
+    height: 260px;
+    border-top: 2px solid nth($color, 3);
+    background-color: nth($color, 4);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 30px;
+
+    .address {
+
+        h3 {
+            margin-bottom: 25px;
+            a {
+                text-decoration: none;
+                color: nth($color, 2);
+                font-family: 'Moon Dance', cursive;
+                font-size: 35px;
+                border: 2px solid nth($color, 2);
+                padding: 3px 10px;
+            }
+        }
+        address {
+            p {
+                font-weight: 600;
+            }
+        }
+    }
+    .email {
+        @include flex (flex, flex-end, center);
+        flex-direction: column;
+        p {
+            font-weight: 600;
+        }
+    }
+    .social {
+
+        div {
+            p {
+                font-weight: 600;
+                text-align: center;
+            }
+        }
+        div {
+            a {
+                margin: 13px;
+            }
+        }
+    }
+}

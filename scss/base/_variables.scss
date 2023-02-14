@@ -1,0 +1,26 @@
+
+$color:
+    white,
+    black,
+    goldenrod,
+    rgb(245, 245, 245),
+    #f5f5f5;
+
+$ancho: 500px;
+
+@mixin flex($flex, $justify, $align) {
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+%bordes {
+    border: 2px solid goldenrod;
+}
+
+$apariencia: (
+    bgSitio: white,
+    fontSitio: black,
+    colorLogo: black,
+    bgFooter: rgb(245, 245, 245),
+)

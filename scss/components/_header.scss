@@ -1,0 +1,50 @@
+/* ---HEADER--- */
+
+.barSup {
+    position: sticky;
+    top: 0;
+    background-color: map-get($apariencia, bgSitio);
+    color: map-get($apariencia, fontSitio);
+
+    nav {
+        div {
+            width: 100%;
+            @include flex (flex, space-evenly, center);            
+            div {
+                a {
+                    h1 {
+                        color: map-get($apariencia, colorLogo);
+                        font-size: 40px;
+                        font-family: 'Moon Dance', cursive;
+                        border: 2px solid map-get($apariencia, colorLogo);
+                        padding: 2px 15px 5px 15px;
+                        margin-bottom: 3px;
+                    }
+                }
+            }
+
+            div {
+                ul {
+                    li {
+                        a {
+                            
+                            color: map-get($apariencia, fontSitio);
+                            font-size: 16px;
+                            font-weight: 600;
+                            padding: 15px;
+                            transition: 0.5s;
+
+                            &:hover {
+                                color: nth($color, 3);
+                            }
+
+                            &:active {
+                                color: nth($color, 2);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

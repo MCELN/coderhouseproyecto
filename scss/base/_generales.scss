@@ -1,0 +1,54 @@
+/* GENERALES */
+/* --Fuentes-- */
+
+@import url('https://fonts.googleapis.com/css2?family=Moon+Dance&family=Poppins:ital,wght@1,200&family=Quicksand:wght@300&display=swap');
+
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fuente predeterminada para el Sitio Web. */
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Títulos de todas las páginas del Sitio Web. */
+
+.tituloPage {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+    margin: 100px 0px 100px;
+}
+
+/* BOTON SUBIR */
+
+.subir {
+    text-align: center;
+    margin: $ancho/ 10 - 10;
+    a {
+        background-color: nth($color, 2);
+        padding: 7px 10px;
+        border: 2px solid nth($color, 3);
+        text-decoration: none;
+        color: nth($color, 1);
+        font-weight: 600;
+        transition: 0.5s;
+        &:hover {
+            background-color: nth($color, 1);
+            color: nth($color, 2);
+            box-shadow: 6px 6px 20px black;
+        }
+        &:active {
+            font-size: 14px;
+            box-shadow: none;
+            background-color: nth($color, 2);
+            color: nth($color, 1);
+        }
+    }
+}
