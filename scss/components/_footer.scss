@@ -12,15 +12,11 @@
 
     .address {
 
-        h3 {
+        a {
             margin-bottom: 25px;
-            a {
-                text-decoration: none;
-                color: nth($color, 2);
-                font-family: 'Moon Dance', cursive;
-                font-size: 35px;
-                border: 2px solid nth($color, 2);
-                padding: 3px 10px;
+            img {
+                width: 200px;
+                margin-bottom: 20px;
             }
         }
         address {

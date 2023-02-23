@@ -49,19 +49,16 @@ body {
   position: sticky;
   top: 0;
   background-color: white;
-  color: black; }
+  color: black;
+  z-index: 100;
+  border-bottom: 2px solid goldenrod; }
   .barSup nav div {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center; }
-    .barSup nav div div a h1 {
-      color: black;
-      font-size: 40px;
-      font-family: 'Moon Dance', cursive;
-      border: 2px solid black;
-      padding: 2px 15px 5px 15px;
-      margin-bottom: 3px; }
+    .barSup nav div div a img {
+      width: 300px; }
     .barSup nav div div ul li a {
       color: black;
       font-size: 16px;
@@ -87,7 +84,7 @@ body {
     margin: 20px; }
   .presentacion div {
     width: 500px; }
-    .presentacion div h4 {
+    .presentacion div h2 {
       text-align: center;
       font-size: 30px;
       font-weight: 700;
@@ -165,7 +162,7 @@ body {
   margin-bottom: 150px; }
   .containerHistoria .tituloHistoria {
     grid-column: 1/span 2; }
-    .containerHistoria .tituloHistoria h4 {
+    .containerHistoria .tituloHistoria h2 {
       text-align: center;
       font-size: 45px;
       font-weight: 700;
@@ -200,14 +197,14 @@ body {
   grid-template-areas: "introduccion introduccion introduccion" "aside autor autor" "aside profesor profesor" "aside ayudante ayudante" "aside colaborador colaborador"; }
   .containerNosotros .itemsNosotros {
     padding: 40px; }
-    .containerNosotros .itemsNosotros h3 {
+    .containerNosotros .itemsNosotros h2 {
       font-family: 'Moon Dance', cursive;
       font-size: 40px; }
     .containerNosotros .itemsNosotros p {
       font-size: 20px; }
   .containerNosotros .artIntroduccion {
     grid-area: introduccion; }
-    .containerNosotros .artIntroduccion h3 {
+    .containerNosotros .artIntroduccion h2 {
       text-align: center; }
   .containerNosotros .artAutor {
     grid-area: autor; }
@@ -236,7 +233,7 @@ body {
     align-items: start;
     flex-direction: column;
     padding: 25px; }
-    .gridContacto .boxContacto h3 {
+    .gridContacto .boxContacto h2 {
       font-size: 30px;
       font-weight: 600; }
     .gridContacto .boxContacto address p a {
@@ -277,15 +274,11 @@ body {
   justify-content: space-between;
   margin-top: 20px;
   padding: 30px; }
-  .footer .address h3 {
+  .footer .address a {
     margin-bottom: 25px; }
-    .footer .address h3 a {
-      text-decoration: none;
-      color: black;
-      font-family: 'Moon Dance', cursive;
-      font-size: 35px;
-      border: 2px solid black;
-      padding: 3px 10px; }
+    .footer .address a img {
+      width: 200px;
+      margin-bottom: 20px; }
   .footer .address address p {
     font-weight: 600; }
   .footer .email {
@@ -341,6 +334,8 @@ body {
       grid-area: contacto; } }
 
 @media screen and (max-width: 749px) {
+  .barSup nav div div a img {
+    width: 250px; }
   .atajoMontale {
     order: 2; }
   .containerHistoria {
@@ -377,11 +372,15 @@ body {
         margin: 0px; } }
 
 @media screen and (max-width: 670px) {
-  .barSup nav div div a h1 {
-    font-size: 20px; }
+  .barSup nav div div a img {
+    width: 200px; }
   .containerNosotros {
     grid-template-columns: 1fr;
     grid-template-areas: "introduccion" "autor" "profesor" "ayudante" "colaborador" "aside"; } }
+
+@media screen and (max-width: 620px) {
+  .barSup nav div div a img {
+    width: 160px; } }
 
 @media screen and (max-width: 570px) {
   .presentacion {

@@ -15,7 +15,7 @@
 
     div {
         width: $ancho;
-        h4 {
+        h2 {
             text-align: center;
             font-size: 30px;
             font-weight: 700;
@@ -121,7 +121,7 @@
         grid-column: 1/span 2;
         @extend %bordes;
 
-        h4{
+        h2{
             text-align: center;
             font-size: 45px;
             font-weight: 700;
@@ -180,7 +180,7 @@
     .itemsNosotros {
         @extend %bordes;
         padding: 40px;
-        h3 {
+        h2 {
             font-family: 'Moon Dance', cursive;
             font-size: 40px;
         }
@@ -191,7 +191,7 @@
 
     .artIntroduccion {
         grid-area: introduccion;
-        h3 {
+        h2 {
             text-align: center;
         }
     }
@@ -234,7 +234,7 @@
         @extend %bordes;
         padding: 25px;
 
-        h3 {
+        h2 {
             font-size: 30px;
             font-weight: 600; 
         }

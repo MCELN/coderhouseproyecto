@@ -80,6 +80,19 @@
 }
 
 @media screen and (max-width: 749px) {
+    .barSup {
+        nav {
+            div {
+                div {
+                    a {
+                        img {
+                            width: 250px;
+                        }
+                    }
+                }
+            }
+        }
+    }
     .atajoMontale {
         order: 2;
     }
@@ -145,8 +158,8 @@
             div {
                 div {
                     a {
-                        h1 {
-                            font-size: 20px;
+                        img {
+                            width: 200px;
                         }
                     }
                 }
@@ -167,6 +180,21 @@
     }
 }
 
+@media screen and (max-width: 620px) {
+    .barSup{
+        nav {
+            div {
+                div {
+                    a {
+                        img {
+                            width: 160px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 @media screen and (max-width: 570px) {
     .presentacion {
         flex-direction: column;

@@ -5,6 +5,8 @@
     top: 0;
     background-color: map-get($apariencia, bgSitio);
     color: map-get($apariencia, fontSitio);
+    z-index: 100;
+    border-bottom: 2px solid goldenrod;
 
     nav {
         div {
@@ -12,13 +14,8 @@
             @include flex (flex, space-evenly, center);            
             div {
                 a {
-                    h1 {
-                        color: map-get($apariencia, colorLogo);
-                        font-size: 40px;
-                        font-family: 'Moon Dance', cursive;
-                        border: 2px solid map-get($apariencia, colorLogo);
-                        padding: 2px 15px 5px 15px;
-                        margin-bottom: 3px;
+                    img {
+                        width: 300px;
                     }
                 }
             }
