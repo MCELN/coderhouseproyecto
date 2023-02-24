@@ -67,6 +67,7 @@
 }
 
 @media screen and (max-width: 850px) {
+    
     .gridContacto {
         grid-template-columns: 1fr;
         grid-template-areas:
@@ -90,6 +91,14 @@
     }
 }
 
+@media screen and (max-width: 763px) {
+    .atajo {
+        .atajoMontale {
+            order: 2;
+        }
+    }
+}
+
 @media screen and (max-width: 749px) {
     .barSup {
         nav {
@@ -103,11 +112,7 @@
                 }
             }
         }
-    }
-
-    .atajoMontale {
-        order: 2;
-    }
+    }    
 
     .containerHistoria {
         grid-template-columns: 1fr;
@@ -242,6 +247,12 @@
         }
     }
 
+    .atajo {
+        flex-direction: column;
+        .atajoMontale {
+            order: 0;
+        }
+    }
     .textoHistoria {
         p {
             font-size: 15px;
@@ -250,9 +261,6 @@
 }
 
 @media screen and (max-width: 499px) {
-    .atajoMontale {
-        order: 0;
-    }
 
     .gridContacto {
         .boxFormulario {
