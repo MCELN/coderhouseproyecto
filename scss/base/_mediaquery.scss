@@ -4,6 +4,7 @@
             width: 300px;
         }
     }
+
     .productos {
         grid-template-columns: 250px 250px 250px;
 
@@ -43,14 +44,16 @@
 
 @media screen and (max-width: 870px) {
     .barSup {
-        position:static;
+        position: static;
         width: 100%;
     }
+
     .presentacion {
         img {
             width: 200px;
         }
     }
+
     .social {
         div {
             a {
@@ -66,15 +69,23 @@
 @media screen and (max-width: 850px) {
     .gridContacto {
         grid-template-columns: 1fr;
-        grid-template-areas: 
-        "formulario"
-        "contacto"
+        grid-template-areas:
+            "contacto"
+            "formulario"
+            "datos"
         ;
+
         .boxFormulario {
             grid-area: formulario;
         }
+
         .boxContacto {
             grid-area: contacto;
+        }
+
+        .contactoAddress {
+            grid-area: datos;
+            flex-direction: row;
         }
     }
 }
@@ -93,23 +104,29 @@
             }
         }
     }
+
     .atajoMontale {
         order: 2;
     }
 
     .containerHistoria {
         grid-template-columns: 1fr;
+
         .tituloHistoria {
             grid-column: 1/span 1;
         }
+
         .textoHistoria {
+            grid-column: 1/span 1;
             .imagenRespHistoria {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+
                 img {
                     width: 90%;
                 }
+
                 figcaption {
                     width: 90%;
                     background-color: nth($color, 2);
@@ -119,18 +136,22 @@
                 }
             }
         }
+
         .imagenesHistoria {
             display: none;
         }
     }
+
     .footer {
         flex-direction: column;
         align-items: center;
         height: auto;
+
         .address {
             text-align: center;
             margin-bottom: 30px;
         }
+
         .email {
             a {
                 img {
@@ -138,13 +159,15 @@
                 }
             }
         }
+
         .social {
             display: flex;
             flex-direction: column;
+
             div {
-                a {                                      
+                a {
                     img {
-                        margin: 0px;   
+                        margin: 0px;
                     }
                 }
             }
@@ -153,7 +176,7 @@
 }
 
 @media screen and (max-width: 670px) {
-    .barSup{
+    .barSup {
         nav {
             div {
                 div {
@@ -181,7 +204,7 @@
 }
 
 @media screen and (max-width: 620px) {
-    .barSup{
+    .barSup {
         nav {
             div {
                 div {
@@ -195,24 +218,30 @@
         }
     }
 }
+
 @media screen and (max-width: 570px) {
     .presentacion {
         flex-direction: column;
+
         div {
             order: 2;
             width: 90%
         }
+
         img {
             margin-bottom: 25px;
             width: 280px;
         }
     }
+
     .productos {
         grid-template-columns: 250px;
+
         .tituloProductos {
             grid-column: 1/span 1;
         }
     }
+
     .textoHistoria {
         p {
             font-size: 15px;
@@ -224,18 +253,14 @@
     .atajoMontale {
         order: 0;
     }
+
     .gridContacto {
-        font-size: 10px;
-        .boxContacto {
-            address {
-                div {
-                    a {
-                        img {
-                            width: 30px;
-                        }
-                    }
-                }
-            }
+        .boxFormulario {
+            font-size: 13px;
+        }
+
+        .contactoAddress {
+            flex-direction: column;
         }
     }
 }
